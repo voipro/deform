@@ -1135,7 +1135,9 @@ class SequenceWidget(Widget):
         else:
             # this serialization is being performed as a result of a
             # first-time rendering
-            subfields = [ (val, item_field.clone()) for val in cstruct ]
+            subfields = [ (item_field.schema.serialize(val),
+                                    item_field.clone()) for val in cstruct ]
+            
 
         template = readonly and self.readonly_template or self.template
         translate = field.translate
