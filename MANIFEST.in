@@ -1,0 +1,2 @@
+include *.txt *.ini *.cfg *.sh
+recursive-include deform *.css *.gif *.htm *.html *.jpg *.mo *.png *.po *.pot *.pt *.py *.swf *.txt *.js
